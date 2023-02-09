@@ -1,0 +1,54 @@
+In this discussion, you will apply the statistical concepts and techniques covered in this week's reading about multiple regression. Last week's discussion involved a car rental company that wanted to evaluate the premise that heavier cars are less fuel efficient than lighter cars. The company expected fuel efficiency (miles per gallon) and weight of the car (often measured in thousands of pounds) to be correlated. The company also expects cars with higher horsepower to be less fuel efficient than cars with lower horsepower. They would like you to consider this new variable in your analysis.
+
+In this discussion, you will work with a cars data set that includes the three variables used in this discussion:
+
+Miles per gallon (coded as mpg in the data set)
+Weight of the car (coded as wt in the data set)
+Horsepower (coded as hp in the data set)
+
+Cars data frame (showing only the first five observations)
+
+Unnamed: 0	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
+10	Merc 280C	17.8	6	167.6	123	3.92	3.440	18.90	1	0	4	4
+26	Porsche 914-2	26.0	4	120.3	91	4.43	2.140	16.70	0	1	5	2
+0	Mazda RX4	21.0	6	160.0	110	3.90	2.620	16.46	0	1	4	4
+28	Ford Pantera L	15.8	8	351.0	264	4.22	3.170	14.50	0	1	5	4
+19	Toyota Corolla	33.9	4	71.1	65	4.22	1.835	19.90	1	1	4	1
+
+Check to be sure your scatterplots of miles per gallon against horsepower and weight of the car were included in your attachment. Do the plots show any trend? If yes, is the trend what you expected? Why or why not? See Steps 2 and 3 in the Python script.
+
+What are the coefficients of correlation between miles per gallon and horsepower? Between miles per gallon and the weight of the car? What are the directions and strengths of these coefficients? Do the coefficients of correlation indicate a strong correlation, weak correlation, or no correlation between these variables? See Step 4 in the Python script.
+
+          mpg        wt        hp
+mpg  1.000000 -0.877516 -0.775170
+wt  -0.877516  1.000000  0.668304
+hp  -0.775170  0.668304  1.000000
+
+Write the multiple regression equation for miles per gallon as the response variable. Use weight and horsepower as predictor variables. See Step 5 in the Python script. How might the car rental company use this model?
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    mpg   R-squared:                       0.834
+Model:                            OLS   Adj. R-squared:                  0.822
+Method:                 Least Squares   F-statistic:                     68.02
+Date:                Thu, 09 Feb 2023   Prob (F-statistic):           2.87e-11
+Time:                        01:07:05   Log-Likelihood:                -69.684
+No. Observations:                  30   AIC:                             145.4
+Df Residuals:                      27   BIC:                             149.6
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     37.5353      1.636     22.946      0.000      34.179      40.892
+wt            -4.0024      0.649     -6.170      0.000      -5.333      -2.671
+hp            -0.0308      0.010     -3.239      0.003      -0.050      -0.011
+==============================================================================
+Omnibus:                        5.691   Durbin-Watson:                   2.441
+Prob(Omnibus):                  0.058   Jarque-Bera (JB):                4.312
+Skew:                           0.908   Prob(JB):                        0.116
+Kurtosis:                       3.386   Cond. No.                         593.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
