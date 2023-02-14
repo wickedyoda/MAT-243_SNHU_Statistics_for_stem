@@ -1,0 +1,17 @@
+Their Information: 
+Both the scatter plots show the same trend, as horsepower or weight increase, there is a decrease in miles per gallon. The trend is expected because higher horsepower burns more fuel, and more weight requires more work to reach the same speeds.
+The coefficient correlation between miles per gallon and weight is -0.864, between miles per gallon and horsepower the coefficient is -0.764. Both of these are stronger negative correlations that means there is a direct effect on miles per gallon when you change the horsepower and weight.
+The multiple regression equation would be something along the lines of mpg = 37.0109 - (-3.8893(being the weight) - 0.0301(being the horsepower))x. Using this would be beneficial to rental companies by studying which size cars that also produce adequate horsepower are the most worth while to rent. 
+
+My information: 
+The multiple regression equation for miles per gallon (mpg) as the response variable with weight (wt) and horsepower (hp) as predictor variables can be represented as:
+mpg = 37.5353 - 4.0024 * wt - 0.0308 * hp
+The car rental company can use this model to predict a car's fuel efficiency (miles per gallon) based on its weight and horsepower. By inputting the weight and horsepower of a vehicle into this equation, the company can estimate its miles per gallon, which can help the company make informed decisions about the types of cars to purchase or rent out to customers.
+The coefficients of correlation between miles per gallon and horsepower are -0.775170, and between miles per gallon and the car's weight are -0.877516. Both coefficients are negative, indicating a strong negative correlation between miles per gallon and weight and horsepower. This suggests that as weight and horsepower increase, miles per gallon decrease. The coefficients of correlation indicate a strong correlation between these variables.
+
+
+Answer the following using their information: 
+
+1. Review your peer's multiple regression model (#3 in their initial post). What is the predicted value of miles per gallon for a car that has 2.78 (2,780 lbs) weight and 225 horsepower? Suppose that this car achieves 18 miles per gallon, what is the residual based on this actual value and the value that is predicted using the regression equation?
+2. How do the plots and correlation coefficients of your peers compare with yours?
+3. Would you recommend this regression model to the car rental company? Why or why not?
