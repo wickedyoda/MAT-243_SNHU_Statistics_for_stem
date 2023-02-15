@@ -1,6 +1,14 @@
 ## This repo is my class work for applied statistics MAT-243 at Southern New Hampshire University online.
 
-![1676504808961](C:\Users\trave\OneDrive\Education\SNHU\Class\SNHU_Statistics_for_stem\SNHU Logo.png "SNHU Logo")
+---
+
+
+
+![1676505207413](image/README/1676505207413.png)
+
+---
+
+
 
 While I am working in class I my files may be a little rough and not easy to follow. I will straighten them up and make sure everything is formatted correctly after class.
 
