@@ -3,7 +3,7 @@
 ---
 
 
-![1676505207413](image/README/1676505207413.png)
+![1676505207413][def]
 
 ---
 
@@ -22,3 +22,6 @@ All Jupyter notebook code is coded in Python. It says HTML because the visual fi
 UPDATE: Added .py files for the Jupyter Notebook for Project 1, Project 2 and Project 3.
 
 I found that installing Anaconda (most updated version for python) and running Visual Studio Code from Anaconda, then proceeding to open and run the .py file fixed the error for it not finding the 'numpy' module.
+
+
+[def]: image/README/1676505207413.png
