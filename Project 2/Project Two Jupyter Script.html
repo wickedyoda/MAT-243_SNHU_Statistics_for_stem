@@ -14673,7 +14673,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14836,7 +14836,7 @@ Remember to enter the team name within single quotes. For example, if you picked
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Range of years: 2013-2015 (Note: The line below selects all teams within the three-year period 2013-2015. This is not your team&#39;s dataframe.</span>
@@ -14844,7 +14844,7 @@ Remember to enter the team name within single quotes. For example, if you picked
 
 <span class="c1"># The dataframe for your team is called your_team_df.</span>
 <span class="c1"># ---- TODO: make your edits here ----</span>
-<span class="n">your_team_df</span> <span class="o">=</span> <span class="n">your_years_leagues_df</span><span class="p">[(</span><span class="n">your_years_leagues_df</span><span class="p">[</span><span class="s1">&#39;fran_id&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Bulls&#39;</span><span class="p">)]</span>
+<span class="n">your_team_df</span> <span class="o">=</span> <span class="n">your_years_leagues_df</span><span class="p">[(</span><span class="n">your_years_leagues_df</span><span class="p">[</span><span class="s1">&#39;fran_id&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Heat&#39;</span><span class="p">)]</span>
 <span class="n">your_team_df</span> <span class="o">=</span> <span class="n">your_team_df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">your_team_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">to_html</span><span class="p">()))</span>
@@ -14888,63 +14888,63 @@ Remember to enter the team name within single quotes. For example, if you picked
   <tbody>
     <tr>
       <th>0</th>
-      <td>201210310CHI</td>
+      <td>201210300MIA</td>
       <td>2013</td>
-      <td>Bulls</td>
-      <td>93</td>
-      <td>87</td>
-      <td>1598.8490</td>
-      <td>1415.1243</td>
+      <td>Heat</td>
+      <td>120</td>
+      <td>107</td>
+      <td>1666.3193</td>
+      <td>1586.1121</td>
       <td>H</td>
       <td>W</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>201211020CLE</td>
+      <td>201211020NYK</td>
       <td>2013</td>
-      <td>Bulls</td>
-      <td>115</td>
-      <td>86</td>
-      <td>1610.6219</td>
-      <td>1345.7418</td>
+      <td>Heat</td>
+      <td>84</td>
+      <td>104</td>
+      <td>1647.6675</td>
+      <td>1548.2699</td>
       <td>A</td>
-      <td>W</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>201211030CHI</td>
-      <td>2013</td>
-      <td>Bulls</td>
-      <td>82</td>
-      <td>89</td>
-      <td>1593.3835</td>
-      <td>1471.2083</td>
-      <td>H</td>
       <td>L</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>201211060CHI</td>
+      <th>2</th>
+      <td>201211030MIA</td>
       <td>2013</td>
-      <td>Bulls</td>
+      <td>Heat</td>
+      <td>119</td>
+      <td>116</td>
+      <td>1650.0934</td>
+      <td>1554.4674</td>
+      <td>H</td>
+      <td>W</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>201211050MIA</td>
+      <td>2013</td>
+      <td>Heat</td>
+      <td>124</td>
       <td>99</td>
-      <td>93</td>
-      <td>1596.7441</td>
-      <td>1499.5527</td>
+      <td>1656.5652</td>
+      <td>1504.0280</td>
       <td>H</td>
       <td>W</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>201211080CHI</td>
+      <td>201211070MIA</td>
       <td>2013</td>
-      <td>Bulls</td>
-      <td>91</td>
-      <td>97</td>
-      <td>1587.4724</td>
-      <td>1653.8605</td>
+      <td>Heat</td>
+      <td>103</td>
+      <td>73</td>
+      <td>1659.7239</td>
+      <td>1361.5804</td>
       <td>H</td>
-      <td>L</td>
+      <td>W</td>
     </tr>
   </tbody>
 </table>
@@ -14993,7 +14993,7 @@ Number of rows in the dataset = 246
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
@@ -15029,9 +15029,9 @@ Number of rows in the dataset = 246
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Mean Relative Skill of your team in the years 2013 to 2015 = 1548.57
+<pre>Mean Relative Skill of your team in the years 2013 to 2015 = 1617.48
 Hypothesis Test for the Population Mean
-Test Statistic = 91.19
+Test Statistic = 43.55
 P-value = 0.0
 </pre>
 </div>
@@ -15081,7 +15081,7 @@ P-value = 0.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code in this code block section</span>
@@ -15116,9 +15116,9 @@ P-value = 0.0
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Mean Points Scored by your team in the years 2013 to 2015 = 95.88
+<pre>Mean Points Scored by your team in the years 2013 to 2015 = 99.92
 Hypothesis Test for the Population Mean
-Test Statistic = -13.66
+Test Statistic = -8.7
 P-value = 0.0
 </pre>
 </div>
@@ -15165,7 +15165,7 @@ P-value = 0.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.stats.proportion</span> <span class="kn">import</span> <span class="n">proportions_ztest</span>
@@ -15207,10 +15207,10 @@ P-value = 0.0
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Proportion of games won by your team when scoring more than 102 points in the years 2013 to 2015 = 0.8529
+<pre>Proportion of games won by your team when scoring more than 102 points in the years 2013 to 2015 = 0.8922
 Hypothesis Test for the Population Proportion
-Test Statistic = -1.29
-P-value = 0.1958
+Test Statistic = -0.26
+P-value = 0.7917
 </pre>
 </div>
 </div>
@@ -15245,7 +15245,7 @@ P-value = 0.1958
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
@@ -15284,9 +15284,9 @@ P-value = 0.1958
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Mean Relative Skill of the assigned team in the years 1996 to 1998 = 1739.8
-Mean Relative Skill of your team in the years 2013 to 2015  = 1548.57
+Mean Relative Skill of your team in the years 2013 to 2015  = 1617.48
 Hypothesis Test for the Difference Between Two Population Means
-Test Statistic = 47.79
+Test Statistic = 17.07
 P-value = 0.0
 </pre>
 </div>
