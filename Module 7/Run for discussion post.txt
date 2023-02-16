@@ -1,0 +1,65 @@
+LAst weeks Data and response: 
+
+The multiple regression equation for miles per gallon (mpg) as the response variable with weight (wt) and horsepower (hp) as predictor variables can be represented as:
+
+mpg = 37.5353 - 4.0024 * wt - 0.0308 * hp
+
+The car rental company can use this model to predict a car's fuel efficiency (miles per gallon) based on its weight and horsepower. By inputting the weight and horsepower of a vehicle into this equation, the company can estimate its miles per gallon, which can help the company make informed decisions about the types of cars to purchase or rent out to customers.
+The coefficients of correlation between miles per gallon and horsepower are -0.775170, and between miles per gallon and the car's weight are -0.877516. Both coefficients are negative, indicating a strong negative correlation between miles per gallon and weight and horsepower. This suggests that as weight and horsepower increase, miles per gallon decrease. The coefficients of correlation indicate a strong correlation between these variables.
+ 
+          mpg        wt        hp
+mpg  1.000000 -0.877516 -0.775170
+wt  -0.877516  1.000000  0.668304
+hp  -0.775170  0.668304  1.000000
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    mpg   R-squared:                       0.838
+Model:                            OLS   Adj. R-squared:                  0.826
+Method:                 Least Squares   F-statistic:                     69.75
+Date:                Thu, 16 Feb 2023   Prob (F-statistic):           2.16e-11
+Time:                        11:30:29   Log-Likelihood:                -69.283
+No. Observations:                  30   AIC:                             144.6
+Df Residuals:                      27   BIC:                             148.8
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     37.2363      1.583     23.518      0.000      33.988      40.485
+wt            -3.7564      0.632     -5.943      0.000      -5.053      -2.460
+hp            -0.0332      0.009     -3.686      0.001      -0.052      -0.015
+==============================================================================
+Omnibus:                        4.804   Durbin-Watson:                   1.893
+Prob(Omnibus):                  0.091   Jarque-Bera (JB):                3.519
+Skew:                           0.825   Prob(JB):                        0.172
+Kurtosis:                       3.307   Cond. No.                         574.
+==============================================================================
+
+Answer the following: 
+	1. Is at least one of the two variables (weight and horsepower) significant in the model? Run the overall F-test and provide your interpretation at 5% level of significance. See Step 5 in the Python script. Include the following in your analysis:
+		a. Define the null and alternative hypothesis in mathematical terms and in words.
+		b. Report the level of significance.
+		c. Include the test statistic and the P-value. (Hint: F-Statistic and Prob (F-Statistic) in the output).
+		d. Provide your conclusion and interpretation of the test. Should the null hypothesis be rejected? Why or why not?
+	2. What is the slope coefficient for the weight variable? Is this coefficient significant at 5% level of significance (alpha=0.05)? (Hint: Check the P-value, P>|t|, for weight in Python output. Recall that this is the individual t-test for the beta parameter.) See Step 5 in the Python script.
+	3. What is the slope coefficient for the horsepower variable? Is this coefficient significant at 5% level of significance (alpha=0.05)? (Hint: Check the P-value, P>|t|, for horsepower in Python output. Recall that this is the individual t-test for the beta parameter.) See Step 5 in the Python script.
+	4. What is the purpose of performing individual t-tests after carrying out the overall F-test? What are the differences in the interpretation of the two tests?
+	5. What is the coefficient of determination of your multiple regression model from Module Six? Provide appropriate interpretation of this statistic.
+
+
+My response: 
+
+1. Is at least one of the two variables (weight and horsepower) significant in the model?
+	a. The null hypothesis is that none of the variables (weight and horsepower) have a significant effect on miles per gallon. The alternative hypothesis is that at least one of the variables has a significant effect on miles per gallon.
+	b. The level of significance is 5%.
+	c. The F-statistic is 69.75 and the corresponding p-value is 2.16e-11.
+	d. Based on the p-value being less than the level of significance, we reject the null hypothesis and conclude that at least one of the variables (weight and horsepower) has a significant effect on miles per gallon.
+
+2. The slope coefficient for the weight variable is -3.7564. To determine whether this coefficient is significant at 5% level of significance, we can check the P-value, P>|t|, in the Python output. The P-value for the weight variable is less than 0.05, indicating that the coefficient is statistically significant.
+
+3. The slope coefficient for the horsepower variable is -0.0332. To determine whether this coefficient is significant at 5% level of significance, we can check the P-value, P>|t|, in the Python output. The P-value for the horsepower variable is less than 0.05, indicating that the coefficient is statistically significant.
+
+4. The purpose of performing individual t-tests after carrying out the overall F-test is to determine which variables have a significant effect on the response variable, and to obtain more information about the magnitude and direction of the relationship between each predictor variable and the response variable. The F-test assesses the overall significance of the model, while the t-tests assess the significance of each individual predictor variable.
+
+5. The coefficient of determination (R-squared) of the multiple regression model from Module Six is 0.838. This statistic represents the proportion of the variation in the response variable (miles per gallon) that is explained by the predictor variables (weight and horsepower) in the model. In other words, approximately 84% of the variability in miles per gallon can be explained by the variables weight and horsepower.
