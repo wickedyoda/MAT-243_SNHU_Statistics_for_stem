@@ -54,13 +54,28 @@ Data from step 6:
 	Test Statistic = 17.07
 	P-value = 0.0
 
-
-Requirements: 
+Requirements:
 
     1. Each paragrah must have a minimal of 3 sentences
 
-
 Ansewer the following:
 
+You created a multiple regression model with the total number of wins as the response variable, with average points scored, average relative skill, average points differential, and average relative skill differential as predictor variables.
 
-Simple Linear Regression: Predicting the Total Number of Wins using Average Relative Skill
+See Step 6 in the Python script to answer the following questions:
+
+•	In general, how is a multiple linear regression model used to predict the response variable using predictor variables? 
+•	What is the equation for your model? 
+•	What are the results of the overall F-test? Summarize all important steps of this hypothesis test. This includes:
+		a.	Null Hypothesis (statistical notation and its description in words)
+		b.	Alternative Hypothesis (statistical notation and its description in words)
+		c.	Level of Significance 
+		d.	Report the test statistic and the P-value in a formatted table as shown below:
+		e.	Conclusion of the hypothesis test and its interpretation based on the P-value 
+•	Based on the results of the overall F-test, is at least one of the predictors statistically significant in predicting the number of wins in the season? 
+•	What are the results of individual t-tests for the parameters of each predictor variable?  Is each of the predictor variables statistically significant based on its P-value? Use a 1% level of significance.
+•	Report and interpret the coefficient of determination.
+•	What is the predicted total number of wins in a regular season for a team that is averaging 75 points per game with a relative skill level of 1350, average point differential of -5 and average relative skill differential of -30?
+•	What is the predicted total number of wins in a regular season for a team that is averaging 100 points per game with a relative skill level of 1600, average point differential of +5 and average relative skill differential of +95? 
+
+
